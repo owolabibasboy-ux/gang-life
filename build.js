@@ -1,0 +1,1 @@
+const fs=require('fs');const path=require('path');fs.mkdirSync('public/vendor',{recursive:true});fs.copyFileSync(require.resolve('three/build/three.module.js'),'public/vendor/three.module.js');console.log('Prepared static Three.js asset for Vercel');
